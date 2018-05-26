@@ -1,0 +1,21 @@
+Parallel Sorting with Regular Sampling (PSRS) Algorithm
+Author: Jimmy Nguyen
+Email: jimmy@jimmyworks.net
+
+Makefile Commands:
+
+   make          make executable
+   make test     test all test cases
+   make debug    run in debug mode to show correct output
+   make time     run program in profiling mode to show times
+   make backup   backup files
+   
+Files:
+
+   src/ 			source directory
+      Makefile			Makefile
+      psrs.c 			C source file 
+   
+  Results.xlsx			Excel with raw output and organized results
+  Report.docx			Formal report
+
