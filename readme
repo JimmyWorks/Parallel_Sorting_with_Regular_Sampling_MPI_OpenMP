@@ -2,6 +2,34 @@ Parallel Sorting with Regular Sampling (PSRS) Algorithm
 Author: Jimmy Nguyen
 Email: jimmy@jimmyworks.net
 
+ Program Description
+ This program uses the Parallel Sorting with Regular Sampling
+ (PSRS) algorithm for parallel sorting using MPI and OpenMP.
+ Sorting on a single process uses quicksort which is optimized
+ using OpenMP.  The overall program is parallelized using MPI
+ and multiple processors.  
+ 
+ Program operation can be performed in one of three modes: 
+ 1 - NORMAL, 
+ 2 - DEBUG, and
+ 3 - TIMER.  
+ 
+ NORMAL mode 
+ Runs without any debug statements nor time statements except for
+ the final reported run time.  
+ 
+ DEBUG mode 
+ Prints all debug statements and can only be done with the sample 
+ count specified.  Sorting is verified by the parallel definition
+ of sorted.
+ 
+ TIMER mode
+ Prints all the time intervals throughout the program
+ allowing the program to be profiled for various bottlenecks.
+ The program is timed based on the sorting tasks performed.
+
+ NOTE: DEBUG mode also limits values to 0-29 for easy reading.
+ 
 Makefile Commands:
 
    make          make executable
